@@ -1,7 +1,7 @@
-function New ({image,authonName,bookName}){
+function New ({details}){
     
  return(
-    <div style={
+    <div  style={
         {
          border:'2px solid ',
          display:'inline-block',
@@ -10,9 +10,9 @@ function New ({image,authonName,bookName}){
          padding:'10px'
         }
     }>
-       <img src={image}  style={{boxShadow:'10px 10px 15px black', margin:'0px'}} />
-       <h2>{bookName}</h2>
-       <p>{authonName}</p>
+       <img src={details.img}  style={{boxShadow:'10px 10px 15px black', margin:'0px',height:'500px', width:'338px'}} />
+       <h2>{details.bookName}</h2>
+       <p>{details.authorName}</p>
        <p>199</p>
        <button style={
         {

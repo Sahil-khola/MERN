@@ -1,19 +1,31 @@
 import New from "./New"
 
 function App() {
-  const book = 
+  const books = [
     {
-       img : "img.jpg",
-       bookName : "CBSE Sample Paper",
-       authonName : 'OSWAAL BOOKS',
-    }
+      img : "img.jpg",
+      bookName : "CBSE Sample Paper",
+      authonName : 'OSWAAL BOOKS',
+    },
+    {
+      img : "book2.jpg",
+      bookName : "The ART OF BEING ALONE",
+      authonName : 'RENUKA GAVRANI',
+    },
+   {
+     img : "book3.jpg",
+     bookName : "The ART OF BEING ALONE",
+     authonName : 'NICK TRENTON',
+    } 
+  ]
     
   return(
     <>
-    <New image={book.img} authorName={book.authonName} bookName={book.authonName}  />
-    <New />
-    <New />
-    <New />
+     {
+      books.map((items)=>(
+        <New details = {items} />
+      ))
+     }
     </>
   )
 }
