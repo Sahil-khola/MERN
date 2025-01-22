@@ -1,13 +1,10 @@
 import React from 'react'
 
-const Book = () => {
-  const image = "./book1.jpg"
-  const title = "The science of Getting Started"
-  const publisher = 'Patrick King'
-  const price="$120"
+const Book = (props) => {
+ const {image,price,title,publisher,key}= props
   return (
     <>
-      <figure className='main-fig'>
+      <figure className='main-fig' key={key}>
         <img src={image} alt="" />
         <figcaption className='book-info'>
         <h2>{title}</h2>

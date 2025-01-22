@@ -1,0 +1,26 @@
+  [ 
+   {
+     "image" : "./book1.jpg",
+     "title" : "The science of Getting Started",
+     "publisher" : "Patrick King",
+     "price":"$120"
+  },
+   {
+     "image" : "./book2.jpg",
+     "title" : "Keep Calm",
+     "publisher" : "Nick Trenton",
+     "price":"$100"
+  },
+   {
+     "image" : "./book3.jpg",
+     "title" : "Dopamine Detox",
+     "publisher" : "Thibaut Meurisse",
+     "price":"$80"
+  },
+ {
+     "image" : "./book4.jpg",
+     "title" : "Happiness Hacks",
+     "publisher" : "Alex Palmer",
+     "price":"$200"
+  }
+  ]
