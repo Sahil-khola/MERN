@@ -1,4 +1,4 @@
-import UseEffect from "./UseEffect"
+import UseEffect  from "./UseEffect"
 
 
 function App() {
