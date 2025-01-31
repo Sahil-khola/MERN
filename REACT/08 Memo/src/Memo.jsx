@@ -1,4 +1,5 @@
 import React from "react";
+import { memo } from "react";
 
 const Memo = ({newCount}) => {
     console.log('new Component Render...',newCount);
@@ -9,4 +10,4 @@ const Memo = ({newCount}) => {
   )
 }
 
-export default React.memo(Memo)
+export default memo(Memo)
