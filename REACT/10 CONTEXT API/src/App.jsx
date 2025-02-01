@@ -3,17 +3,13 @@ import First from './First'
 import { createContext } from 'react';
 
 const NameContext = createContext();
-const Name2Context = createContext();
 
 const App = () => {
     const Name = 'Sahil Khola';
     const Name2 = ' Khola';
   return (
     <div>
-        <NameContext.Provider value={Name}>
-         <First/>
-        </NameContext.Provider>
-        <NameContext.Provider value={Name2}>
+        <NameContext.Provider value={{Name,Name2}}>
          <First/>
         </NameContext.Provider>
     </div>
@@ -21,4 +17,4 @@ const App = () => {
 }
 
 export default App
-export {NameContext,Name2Context};
+export {NameContext};

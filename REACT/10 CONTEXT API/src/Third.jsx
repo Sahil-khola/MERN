@@ -1,21 +1,10 @@
-import React from "react";
-import { NameContext,Name2Context } from "./App";
+import React, { useContext } from "react";
+import { NameContext } from "./App";
 
 const Third = () => {
+  const useCont = useContext(NameContext)
   return (
-    <NameContext.Consumer>
-      {(val) => {
-        return (
-            <Name2Context.Consumer>
-                {
-                    (val2)=>{
-                        return <h1> {val} {val2} </h1>;
-                    }
-                }
-            </Name2Context.Consumer>
-        )
-      }}
-    </NameContext.Consumer>
+    <h1>Name : {useCont.Name} - {useCont.Name2}</h1>
   );
 };
 
