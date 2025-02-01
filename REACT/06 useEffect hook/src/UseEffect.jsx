@@ -1,32 +1,27 @@
-import { useEffect, useState} from "react"
+import { useEffect, useState } from "react";
 
-const UseEffect = () => {
-   const[clicked,setClicked]=useState();
-   const[count,setCount]=useState(0)
+function UseEffect() {
+  const[clicked,setClicked]=useState();
+  const [count,setCount]= useState(0);
 
-  useEffect(()=>{
-    console.log ('Sahil Khola')
+  
+   useEffect(()=>{
+    alert("clicked")
+   },[clicked,count])
 
-    return(
-        ()=>{
-            console.log('return sahil khola');
-        }
-    )
-  },[clicked])
-  return (
-    <div >
-      <button onClick={(()=>{setClicked("clickedd")})}>Click</button>
-      <br />
-      <hr />
-      <button onClick={(()=>{setClicked('submitted')})}>Submit</button>
-      <br />
-      <hr />
-      <button onClick={()=>{setClicked("cleared")}}>Clear</button>
-      <h1>{clicked}</h1>
-      <hr />
-      <button onClick={()=>{setCount(count+1)}} >Increment : {count} </button>
-    </div>
+  return(
+    <>
+   <button onClick={()=>{setClicked('suscribe')}}>suscribe</button>
+   <hr />
+   <button onClick={()=>{setClicked('To')}}>To</button>
+   <hr />
+   <button onClick={()=>{setClicked('Sahil khola')}}>Sahil Khola</button>
+   <hr />
+   <h1>{clicked}</h1>
+   <hr />
+   <h1>{count}</h1>
+   <button onClick={()=>{setCount(count+1)}}>+</button>
+    </>
   )
 }
-
-export default UseEffect
+export default UseEffect;

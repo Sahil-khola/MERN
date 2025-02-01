@@ -1,34 +1,36 @@
-import React, { useEffect, useMemo, useState } from "react";
+import { useEffect } from "react";
+import { useMemo } from "react";
+import { useState } from "react";
 
-const UseMemo = () => {
-  const [count, setCount] = useState(0);
+function UseMemo() {
+  const [count, setcount] = useState(0);
   const [input, setInput] = useState();
-  function clickHandel() {
-    setCount(count + 1);
-  }
-  function inputHandel(event) {
-    setInput(event.target.value);
-  }
-  const result = useMemo(function slowFunction() {
-    let sum = 0;
-    for (let i = 0; i<100000; i++) {
-      sum+=1;
+
+  let  sum = 0
+ 
+  const result = useMemo( function slowFunc() {
+    for (let i = 0; i < 10000000; i++) {
+      sum+=i;
     }
-    console.log('i am slow function');
-    return sum
-    
-  }, [input]);
-
+    console.log("i am slow function");
+    return sum;
+  },[count])
+  
   return (
-    <center>
-      <h1>Use memo hook in React js</h1>
+    <>
       <h1>{count}</h1>
-      <button onClick={clickHandel}>+</button>
+      <button
+        onClick={() => {
+          setcount(count + 1);
+        }}
+      >
+        +
+      </button>
       <hr />
-      <input type="text" onChange={inputHandel} />
-      <h1>input : {result}</h1>
-    </center>
+      <input type="text" onChange={(event) => setInput(event.target.value)} />
+      <h1>{input}</h1>
+      <hr />
+    </>
   );
-};
-
+}
 export default UseMemo;

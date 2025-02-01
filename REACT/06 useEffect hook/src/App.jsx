@@ -5,7 +5,6 @@ function App() {
 
   return (
     <>
-     <h1>useEffect Hook in Reactjs</h1>
      <UseEffect/>
     </>
   )
