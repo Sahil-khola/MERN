@@ -1,11 +1,11 @@
-import Reducer from "./UseReducer"
+import Component from "./UseReducer"
 
 
 function App() {
 
   return (
    <>
-   <Reducer/>
+   <Component/>
    </>
   )
 }
