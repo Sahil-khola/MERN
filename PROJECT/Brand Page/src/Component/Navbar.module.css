@@ -1,0 +1,22 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    align-items: center;
+    margin: 0 auto;
+    height: 72px;
+    padding: 0 32px;
+}
+.ul{
+display: flex;
+list-style: none;
+gap: 24px;
+}
+.button{
+    all: unset;
+    padding: 6px 16px;
+    background-color: #d01c28;
+    height: 32px;
+    color: white;
+    font-weight: 500;
+}

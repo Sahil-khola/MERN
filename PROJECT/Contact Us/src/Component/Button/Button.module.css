@@ -1,0 +1,24 @@
+.button_primary{
+    background-color: black;
+    color: white;
+    padding: 18px 10px;
+    min-width: 220px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.button_secondary{
+    color: black;
+    background-color: white;
+    padding: 18px 10px;
+    min-width: 220px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    margin-top: 10px;
+}

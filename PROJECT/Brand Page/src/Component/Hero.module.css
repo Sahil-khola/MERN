@@ -1,0 +1,54 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: calc(100vh - 72px);
+  align-items: center;
+  gap: 32px;
+}
+
+.Contant {
+  padding:3px ;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.Contant h1 {
+  font-weight: 800;
+  font-size: 108px;
+  line-height: 102px;
+}
+.Contant p {
+  font-weight: 600;
+  color: #2e2e2e;
+  max-width: 450px;
+}
+
+.button {
+  display: flex;
+  gap: 40px;
+}
+.btn {
+  background-color: #d01c28;
+  color: white;
+  font-weight: 500;
+  height: 32px;
+  width: 75px;
+}
+.btn2 {
+    background-color: transparent;
+  color: black;
+  font-weight: 500;
+  height: 32px;
+  width: 75px;
+}
+.shoping{
+    display: flex;
+    flex-direction: column;
+}
+.icon{
+    display: flex;
+    gap: 16px;
+
+}
+

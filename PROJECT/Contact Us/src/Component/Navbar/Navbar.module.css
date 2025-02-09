@@ -1,0 +1,16 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    width: 100vw;
+    padding: 0px 30px;
+    box-shadow: 10px 10px 10px rgb(205, 205, 197);
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    font-weight: 500;
+}
